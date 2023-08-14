@@ -1,0 +1,22 @@
+@media screen and (max-width:600px) {
+    .body-contents__list {
+        display: inline-block;
+        padding-left: 15%;
+    }
+
+    .body-contents__list div {
+        display: inline;
+        padding: 200px;
+    }
+
+    .main-menu__list {
+        width: 0;
+        display: none;
+    }
+
+    .main-menu__list-min {
+        width: 89%;
+        opacity: 1;
+        padding-right: 25px;
+    }
+}
