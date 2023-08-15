@@ -1,6 +1,8 @@
 .body-contents {
     width: 100%;
     padding: 0 5%;
+    position: absolute;
+    bottom: 0;
     display: contents;
     justify-content: center;
     align-items: center;
@@ -11,19 +13,31 @@
     height: 300px;
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
     /* overflow: hidden; */
 }
 
 .body-contents__banner img {
-    padding-top: 200px;
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    /* top: 300px; 		   */
-    left: 0;
-    /* box-sizing: border-box;  */
-    /* object-fit: cover; */
+    width: 800px;
+    height: 300px;
+    position: fixed; 
+    top: 140px; 		  
+    object-fit: cover;
+}
+
+.body-contents__banner svg {
+    z-index: 1;
+    position: absolute;
+    top: 250px;
+}
+
+.body-contents__banner svg:first-child {
+    right: 80%;
+}
+
+.body-contents__banner svg:nth-child(3) {
+    left: 80%;
 }
 
 .body-contents__list {
