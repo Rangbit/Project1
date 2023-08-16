@@ -10,34 +10,19 @@
 
 .body-contents__banner {
     width: 100%;
-    height: 300px;
-    position: relative;
+    height: 500px;
+    position: fixed;
+    top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
 }
 
 .body-contents__banner img {
-    width: 800px;
-    height: 300px;
-    position: fixed; 
-    top: 140px; 		  
+    width: 2000px;
+    height: 500px;
+    position: fixed;
     object-fit: cover;
-}
-
-.body-contents__banner svg {
-    z-index: 1;
-    position: absolute;
-    top: 250px;
-}
-
-.body-contents__banner svg:first-child {
-    right: 80%;
-}
-
-.body-contents__banner svg:nth-child(3) {
-    left: 80%;
 }
 
 .body-contents__list {
