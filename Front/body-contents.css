@@ -11,18 +11,22 @@
 .body-contents__banner {
     width: 100%;
     height: 500px;
-    position: fixed;
+    position: relative;
     top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .body-contents__banner img {
     width: 2000px;
-    height: 500px;
-    position: fixed;
+    height: 1000px;
+    position: absolute;
     object-fit: cover;
+    object-position:bottom ;
+    text-align: center;
+
 }
 
 .body-contents__list {
@@ -37,4 +41,9 @@
     height: 200px;
     display: inline-block;
     vertical-align: top;
+}
+
+.main-menu__list-min button {
+    background-color: transparent;
+    border:none;
 }

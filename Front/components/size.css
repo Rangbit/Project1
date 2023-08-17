@@ -1,4 +1,4 @@
-@media screen and (max-width:700px) {
+@media screen and (max-width:820px) {
     .body-contents__list {
         display: inline-block;
         padding-left: 15%;
@@ -21,12 +21,42 @@
     }
 
     .body-contents__banner {
-        width: 800px;
-        height: 200px;
+        width: 880px;
+        height: 440px;
     }
     
     .body-contents__banner img {
-        width: 800px;
-        height: 200px;
+        width: 880px;
+        height: 440px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .main-menu__list1,
+    .main-menu__list2,
+    .main-menu__list3,
+    .main-menu__list4,
+    .main-menu__list5 {
+        width: 21%
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .main-menu__list1,
+    .main-menu__list2,
+    .main-menu__list3,
+    .main-menu__list4,
+    .main-menu__list5 {
+        width: 18%
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .main-menu__list1,
+    .main-menu__list2,
+    .main-menu__list3,
+    .main-menu__list4,
+    .main-menu__list5 {
+        width: 15%
     }
 }
