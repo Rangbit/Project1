@@ -5,19 +5,15 @@
     z-index: 11;
     position: fixed;
     right: -80%;
-
     top: 300px;
     /* visibility: hidden; */
-    animation-duration: 3s;
-    animation-name: open_menu;
-    animation-fill-mode: forwards;
+}
+
+.open_menu-ani {
+    animation: open_menu 2s forwards;
 }
 
 @keyframes open_menu {
     0%{right: -80%;}
     100%{right: 0;}
-}
-
-.open_menu {
-
 }
