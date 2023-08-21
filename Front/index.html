@@ -42,14 +42,14 @@
                         </div>
                     </div>
                     <div class="main-menu__list-min">
-                        <button onclick="minButtonClick()"><svg width="40" height="40" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <button class="list-min__button"><svg width="40" height="40" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                             <path fill="#000000" fill-rule="evenodd" d="M0 3.75A.75.75 0 0 1 .75 3h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 3.75ZM0 8a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 8Zm.75 3.5a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5H.75Z" clip-rule="evenodd"/>
                         </svg></button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="main-menu__side-bar">
+        <div class="main-menu__side-bar" id="side-bar">
 
         </div>
         <div class="body-contents">
@@ -62,12 +62,15 @@
     </div>
     
     <script>
-        element = document.getElementById("hey");
-        const minButtonClick = ()=>{
-            document.getElementsByClassName('')
-        }
+        element = document.getElementsByClassName("list-min__button");
+        // element_bar = document.getElementsByClassName("main-menu__side-bar");
+        element.addEventListener("click", ()=> {
+        // e.preventDefault;
+        element.classList.remove("open_menu");
+        element.offsetWidth = element.offsetWidth;
+        element.classList.add("open_menu");
+        });
     </script>
-
 </body>
 </html>
 
