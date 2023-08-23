@@ -62,9 +62,14 @@
     <script>
         function sideMenu() {
             // element_bar = document.getElementsByClassName("main-menu__side-bar")[0];
-            element_bar = document.getElementById("side_bar");
+            let element_bar = document.getElementById("side_bar");
             console.log(element_bar);
-            element_bar.className = "open_menu-ani";
+            
+            if(element_bar.classList.contains('open_menu-ani')){
+                element_bar.classList.add('close_menu-ani');
+            }else{
+                element_bar.classList.add('open_menu-ani');
+            }
             console.log(element_bar.className);
         }
     </script>
