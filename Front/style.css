@@ -21,3 +21,7 @@ body{
 .main {
     position: relative;
 }
+
+button {
+    cursor: pointer;
+}

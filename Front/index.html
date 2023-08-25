@@ -12,34 +12,40 @@
         <div class="head-top">
             <div class="head-top__main">
                 <div class="head-top__main-title">
-                    <img src="https://i.pinimg.com/564x/9c/b9/c5/9cb9c5c51a5df9a562246a471c442fa4.jpg" alt="">
-                    <span>꽃길만 걷개</span>
+                    <a href="./index.html">
+                        <img src="https://i.pinimg.com/564x/9c/b9/c5/9cb9c5c51a5df9a562246a471c442fa4.jpg" alt="">
+                        <span>꽃길만 걷개</span>
+                    </a>
                 </div>
                 <div class="head-top__main-menu">
                     <div class="main-menu__list">
                         <div class="main-menu__list1">
-                            <a href="./map.html">
-                                <span>산책하개</span>
-                            </a>
-                            <div class="list-dropdown">
-                                <a href="#"><p>1</p></a>
-                                <a href="#"><p>1</p></a>
-                                <a href="#"><p>1</p></a>
-                                <a href="#"><p>1</p></a>
-                                <a href="#"><p>1</p></a>
-                            </div>
                         </div>
                         <div class="main-menu__list2">
-                            <a href="./map.html"><span>어디가개</span></a>
                         </div>
                         <div class="main-menu__list3">
-                            <a href="#"><span>아프지말개</span></a>
+                            <a href="./map.html"><span>산책하개</span></a>
+                            <div class="list-dropdown">
+                                <a href="#"><p>산책지도</p></a>
+                                <a href="#"><p>의료시설</p></a>
+                                <a href="#"><p>펫서비스</p></a>
+                            </div>
                         </div>
                         <div class="main-menu__list4">
-                            <a href="./community.html"><span>이야기하개</span></a>
+                            <a href="./community.html"><span>커뮤니티</span></a>
+                            <div class="list-dropdown">
+                                <a href="#"><p>공지사항</p></a>
+                                <a href="#"><p>자유게시판</p></a>
+                                <a href="#"><p>반려동물 찾기</p></a>
+                            </div>
                         </div>
                         <div class="main-menu__list5">
-                            <a href="./myPage.html"><span>난누구개</span></a>
+                            <a href="./my-page.html"><span>마이페이지</span></a>
+                            <div class="list-dropdown">
+                                <a href="#"><p>반려동물</p></a>
+                                <a href="#"><p>내정보</p></a>
+                                <a href="#"><p>다이어리</p></a>
+                            </div>
                         </div>
                     </div>
                     <div class="main-menu__list-min">
@@ -48,9 +54,13 @@
                         </svg></button>
                     </div>
                 </div>
+                <div class="head-top__login">
+                    <a href="./sign-up.html"><div>회원가입</div></a>
+                    <a href="./login.html"><div>로그인</div></a>
+                </div>
             </div>
         </div>
-        <div class="main-menu__side-bar" id="side_bar">
+        <div class="main-menu__side-bar">
         </div>
         <div class="body-contents">
             <div class="body-contents__banner">
@@ -60,11 +70,10 @@
     </div>
 
     <script>
+        // 
         function sideMenu() {
-            // element_bar = document.getElementsByClassName("main-menu__side-bar")[0];
-            let element_bar = document.getElementById("side_bar");
-            console.log(element_bar);
-            
+            let element_bar = document.getElementsByClassName("main-menu__side-bar")[0];
+            console.log(element_bar);            
             if(element_bar.classList.contains('open_menu-ani')){
                 element_bar.classList.add('close_menu-ani');
             }else{
