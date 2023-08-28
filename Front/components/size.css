@@ -34,6 +34,7 @@
     .head-top__login {
         visibility : hidden;
     }
+
 }
 
 @media screen and (max-width:1000px) {

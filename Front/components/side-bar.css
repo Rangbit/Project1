@@ -1,12 +1,11 @@
 .main-menu__side-bar {
-    width: 80%;
+    width: 40%;
     height: 1280px;
-    background-color: aqua;
+    background-color: #fae6df;
     z-index: 9;
     position: fixed;
-    right: -80%;
-    /* top: 300px; */
-    /* visibility: hidden; */
+    right: -50%;
+    padding: 120px 40px 50px 40px;
 }
 
 .open_menu-ani {
@@ -14,7 +13,7 @@
 }
 
 @keyframes open_menu {
-    0%{right: -80%;}
+    0%{right: -50%;}
     100%{right: 0;}
 }
 
@@ -24,5 +23,37 @@
 
 @keyframes close_menu {
     0%{right: 0;}
-    100%{right: -80%;}
+    100%{right: -50%;}
+}
+
+.side-bar__menu {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.side-bar__menu h2 {
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+.side-bar__menu ol {
+    padding: 0 20px 24px 0;
+}
+
+.side-bar__menu i {
+    padding-right: 5px;
+}
+
+.side-bar__login {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.side-bar__login div {
+    padding: 8px 10px;
+    background-color: #f3edeb;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }

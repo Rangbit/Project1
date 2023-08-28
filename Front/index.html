@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FL Dog</title>
-    
+    <script src="https://kit.fontawesome.com/d2846f63b1.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <div class="main">
@@ -61,6 +62,28 @@
             </div>
         </div>
         <div class="main-menu__side-bar">
+            <div class="side-bar__menu">
+                <a href="./map.html"><h2>산책하개</h2></a>
+                <a href="#"><ol><i class="fa-solid fa-map-location-dot"></i>산책지도</ol></a>
+                <a href="#"><ol><i class="fa-solid fa-house-medical"></i>의료시설</ol></a>
+                <a href="#"><ol><i class="fa-solid fa-bell-concierge"></i>펫서비스</ol></a>
+            </div>
+            <div class="side-bar__menu">
+                <a href="./community.html"><h2>커뮤니티</h2></a>
+                <a href="#"><ol><i class="fa-solid fa-bullhorn"></i>공지사항</ol></a>
+                <a href="#"><ol><i class="fa-solid fa-comment"></i>자유게시판</ol></a>
+                <a href="#"><ol><i class="fa-solid fa-magnifying-glass"></i>반려동물 찾기</ol></a>
+            </div>
+            <div class="side-bar__menu">
+                <a href="./my-page.html"><h2>마이페이지</h2></a>
+                <a href="#"><ol><i class="fa-solid fa-dog"></i>반려동물</ol></a>
+                <a href="#"><ol><i class="fa-solid fa-user"></i>내정보</ol></a>
+                <a href="#"><ol><i class="fa-solid fa-calendar-days"></i>다이어리</ol></a>
+            </div>
+            <div class="side-bar__login">
+                <a href="./sign-up.html"><div>회원가입</div></a>
+                <a href="./login.html"><div>로그인</div></a>
+            </div>
         </div>
         <div class="body-contents">
             <div class="body-contents__banner">
@@ -68,20 +91,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // 
-        function sideMenu() {
-            let element_bar = document.getElementsByClassName("main-menu__side-bar")[0];
-            console.log(element_bar);            
-            if(element_bar.classList.contains('open_menu-ani')){
-                element_bar.classList.add('close_menu-ani');
-            }else{
-                element_bar.classList.add('open_menu-ani');
-            }
-            console.log(element_bar.className);
-        }
-    </script>
 </body>
 </html>
 

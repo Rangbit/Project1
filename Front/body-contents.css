@@ -1,3 +1,4 @@
+/* INDEX */
 .body-contents {
     width: 100%;
     padding: 0 5%;
@@ -46,4 +47,26 @@
 .main-menu__list-min button {
     background-color: transparent;
     border:none;
+}
+
+/* Sign Up */
+.body-contents__sign-up {
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    display: flex;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.sign-up__title {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.sign-up__subtitle {
+    font-size: 12px;
+    text-align: right;
+    padding-bottom: 10px;
 }
