@@ -53,10 +53,42 @@
 .body-contents__sign-up {
     width: 100%;
     height: 100%;
-    padding-top: 150px;
+    padding: 150px 15%;
     display: flex;
-    /* align-items: center; */
+    justify-content: center;
     text-align: center;
+    box-sizing: border-box;
+}
+
+.sign-up__input {
+    text-align: left;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-up__input input {
+    display: inline;
+    justify-content: right;
+    width: 300px;
+    height: 30px;
+    border: none;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.sign-up__input-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up__input-btn input {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
 
 .sign-up__title {
@@ -70,3 +102,95 @@
     text-align: right;
     padding-bottom: 10px;
 }
+
+/* login */
+
+.body-contents__login {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-box {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background-color: #fbf9ed;
+    padding: 0 75px;
+    box-sizing: border-box;
+
+}
+
+.login-box__id-wrap,
+.login-box__pw-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 35px;
+    margin: 40px 0 20px 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.login-box>div> i {
+    padding: 0 10px 0 15px;
+}
+
+.login-box>div> input {
+    width: 90%;
+    height: 60%;
+    border: none;
+}
+
+.login-box__check {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-size: 12px;
+}
+
+.check-id,
+.check-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.checkbox_img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('https://s.wemep.co.kr/ui/v2.8.307/dist/pc/css/spr/common.png') 0 -438px no-repeat;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::after{
+    background-position: -75px -438px;
+}
+
+
+.login-box__login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: #fae6df;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+    margin: 20px auto;
+}
+

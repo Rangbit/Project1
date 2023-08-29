@@ -1,11 +1,12 @@
 .main-menu__side-bar {
-    width: 40%;
+    width: 200px;
     height: 1280px;
-    background-color: #fae6df;
+    background-color: #fae6dfee;
     z-index: 9;
     position: fixed;
     right: -50%;
     padding: 120px 40px 50px 40px;
+    display: block;
 }
 
 .open_menu-ani {
@@ -48,7 +49,7 @@
 .side-bar__login {
     display: flex;
     justify-content: space-between;
-    padding: 30px 50px;
+    padding: 30px 10px;
 }
 
 .side-bar__login div {

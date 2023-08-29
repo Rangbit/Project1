@@ -34,7 +34,7 @@
     .head-top__login {
         visibility : hidden;
     }
-
+    
 }
 
 @media screen and (max-width:1000px) {
@@ -44,6 +44,9 @@
     .main-menu__list4,
     .main-menu__list5 {
         width: 28%
+    }
+    .main-menu__side-bar {
+        display : none;
     }
 }
 
@@ -55,6 +58,9 @@
     .main-menu__list5 {
         width: 20%
     }
+    .main-menu__side-bar {
+        display : none;
+    }
 }
 
 @media screen and (max-width:1500px) {
@@ -64,5 +70,8 @@
     .main-menu__list4,
     .main-menu__list5 {
         width: 12%
+    }
+    .main-menu__side-bar {
+        display : none;
     }
 }
