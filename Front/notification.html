@@ -74,7 +74,7 @@
                 <a href="./notification.html"><h2>커뮤니티</h2></a>
                 <a href="./notification.html"><ol><i class="fa-solid fa-bullhorn"></i>공지사항</ol></a>
                 <a href="./community.html"><ol><i class="fa-solid fa-comment"></i>자유게시판</ol></a>
-                <a href="./search-pet.html"><ol><i class="fa-solid fa-magnifying-glass"></i>반려동물 찾기</ol></a>
+                <a href="#"><ol><i class="fa-solid fa-magnifying-glass"></i>반려동물 찾기</ol></a>
             </div>
             <div class="side-bar__menu">
                 <a href="./my-page.html"><h2>마이페이지</h2></a>
@@ -89,18 +89,63 @@
         </div>
         <!-- 메인컨텐츠 -->
         <div class="body-contents">
-            <div class="body-contents__sign-up">
+            <!-- 왼쪽 고정메뉴 -->
+            <div class="body-content__side-menu">
+                <h2>커뮤니티</h2>
+                <a href="./notification.html"><ol>공지사항</ol></a>
+                <a href="./community.html"><ol>자유게시판</ol></a>
+                <a href="./search-pet.html"><ol>반려동물 찾기</ol></a>
+            </div>
+            <div class="body-contents__board">
                 <form action="">
-                    <div class="sign-up__title">Sign Up</div>
-                    <ol class="sign-up__input">아이디 : <input type="text"  placeholder="아이디" name="id"></ol>
-                    <!-- <button class="sign-up__input-id">중복확인</button> -->
-                    <ol class="sign-up__input">비밀번호 : <input type="password"  placeholder="비밀번호" name="pw"></ol>
-                    <ol class="sign-up__input">비밀번호 확인 : <input type="password"  placeholder="비밀번호 확인" name="pw"></ol>
-                    <ol class="sign-up__input">이름 : <input type="text"  placeholder="이름" name="name"></ol>
-                    <ol class="sign-up__input">전화번호 : <input type="text"  placeholder="전화번호" name="tel"></ol>
-                    <ol class="sign-up__input">주소 : <input type="text"  placeholder="집주소" name="address"></ol>
-                    <ol class="sign-up__input">이메일 : <input type="text"  placeholder="email" name="email"></ol>
-                    <ol class="sign-up__input-btn"><input type="submit" value="회원가입"></ol>
+                    <div class="board__head"><h2>공지사항</h2></div>
+                    <div class="board__lists">
+                        <!-- 게시판 상단 -->
+                        <div class="board__list list-top">
+                            <div class="list-num">글번호</div>
+                            <div class="list-title">제목</div>
+                            <div class="list-name">작성자</div>
+                            <div class="list-date">작성일</div>
+                            <div class="list-count">조회</div>
+                        </div>
+                        <!-- 게시판 콘텐츠 +  -->
+                        <div class="board__list">
+                            <div class="list-num">0001</div>
+                            <div class="list-title">제목을 길 게 작성하기</div>
+                            <div class="list-name">관리자</div>
+                            <div class="list-date">2023-08-30</div>
+                            <div class="list-count">9999</div>
+                        </div>
+                        <!-- 게시판 콘텐츠 +  -->
+                        <div class="board__list">
+                            <div class="list-num">0001</div>
+                            <div class="list-title">제목을 길 게 작성하기</div>
+                            <div class="list-name">작성자</div>
+                            <div class="list-date">2023-08-30</div>
+                            <div class="list-count">9999</div>
+                        </div>
+                    </div>
+                    <!-- 공지사항 글쓰기 (Admin) -->
+                    <div class="board__btn">
+                        <button><a href="./board-writing.html">글쓰기</a></button>
+                    </div>
+                    <!-- 글 검색 -->
+                    <div class="board__search">
+                        <input type="search" name="search" placeholder="검색어를 입력하세요">
+                        <a class="search-btn" href="#">검색</a>
+                    </div>
+                    <!-- 게시판 페이징 -->
+                    <div class="board__page">
+                        <ul class="board__page-list">
+                            <li><a href="#">&lt;</a></li>
+                            <li><a href="#" class="now-page">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&gt;</a></li>
+                        </ul>
+                    </div>
                 </form>
             </div>
         </div>

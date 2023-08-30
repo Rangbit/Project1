@@ -5,6 +5,7 @@
 @import "./components/head-top.css";
 @import "./components/size.css";
 @import "./components/side-bar.css";
+@import "./components/side-menu.css";
 
 /* font */
 @font-face {

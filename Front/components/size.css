@@ -35,6 +35,17 @@
         visibility : hidden;
     }
     
+    .body-content__side-menu {
+        visibility: hidden;
+    }
+
+    .body-contents__board {
+        padding: 150px 0 0 80px;
+    }
+
+    .board__head {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:1000px) {
@@ -48,6 +59,9 @@
     .main-menu__side-bar {
         display : none;
     }
+    .body-content__side-menu {
+        width: 250px;
+    }
 }
 
 @media screen and (max-width:1250px) {
@@ -60,6 +74,9 @@
     }
     .main-menu__side-bar {
         display : none;
+    }
+        .body-content__side-menu {
+        width: 250px;
     }
 }
 
