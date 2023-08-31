@@ -114,7 +114,7 @@
 
 .login-box {
     width: 500px;
-    height: 300px;
+    height: 380px;
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     background-color: #fbf9ed;
@@ -196,11 +196,25 @@ input[type="checkbox"]:checked + label:before {
     margin: 20px auto;
 }
 
+.login-box__social {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
 /* board */
 
 .body-contents__board {
     width: 100%;
-    height: 900px;
+    height: 1100px;
     background-color: aqua;
     box-sizing: border-box;
     display: block;
@@ -320,4 +334,48 @@ input[type="checkbox"]:checked + label:before {
 
 .board__page-list li a.now-page {
     background-color: rgb(194, 194, 194);
+}
+
+/* board-writing */
+
+.board {
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.board input,
+.board textarea {
+    width: 100%;
+    margin: 10px 0 10px 10px;
+}
+
+.board input {
+    height: 30px;
+}
+
+.board textarea {
+    height: 500px;
+}
+
+.board__list-file {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.board__btn-file {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.board__btn-file input {
+    border: none;
+    width: 15%;
+    height: 30px;
 }

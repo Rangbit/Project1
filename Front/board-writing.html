@@ -98,17 +98,22 @@
             </div>
             <div class="body-contents__board">
                 <form action="">
-                    <div class="board__head"><h2>공지사항</h2></div>
+                    <!-- <div class="board__head"><h2></h2></div> -->
                     <div class="board__lists">
-                       
+                        <div class="board__list-title board">제목<input type="text" name="board-title"></div>
+                        <div class="board__list-content board">내용<textarea name="board-content" id="" cols="30" rows="10"></textarea></div>
                     </div>
+                    <div class="board__list-file"><input type="file" name="board-file"></div>
                     <!-- 작성버튼 -->
-                    <div class="board__btn">
-                        <input type="submit" >
+                    <div class="board__btn-file">
+                        <input multiple="multiple" type="submit" value="작성하기">
                     </div>
-
                 </form>
             </div>
+        </div>
+        <!-- TOP 버튼 -->
+        <div class="top-button">
+            <a href="#"><i class="fa-solid fa-angle-up fa-2xl"></i></a>
         </div>
     </div>
 </body>

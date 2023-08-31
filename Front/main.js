@@ -1,3 +1,4 @@
+// 사이드메뉴 온클릭 이벤트
 let cnt = 0;
 function sideMenu() {
     let element_bar = document.getElementsByClassName("main-menu__side-bar")[0];
@@ -12,3 +13,5 @@ function sideMenu() {
     cnt += 1;
     console.log(element_bar.className);
 }
+
+// 페이징
